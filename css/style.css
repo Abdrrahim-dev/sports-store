@@ -237,7 +237,7 @@ header .right i.left-border {
   border: 1px solid rgba(0, 0, 0, 0.22);
 }
 
-.main-sec .container .cards .card i {
+.main-sec .container .one .card i {
   font-size: 35px;
   color: var(--second-color);
   margin-bottom: 25px;
@@ -249,7 +249,7 @@ header .right i.left-border {
   font-weight: 700;
   font-family: var(--Bebas);
 }
-.main-sec .container .cards .card p {
+.main-sec .container .one .card p {
   font-size: 10px;
   line-height: 24px;
   color: var(--second-color);
@@ -257,7 +257,7 @@ header .right i.left-border {
   font-family: var(--montserrat);
   margin: 10px 0;
 }
-.main-sec .container .cards .card a {
+.main-sec .container .one .card a {
   font-size: 13px;
   line-height: 26px;
   color: var(--third-color);
@@ -389,5 +389,31 @@ header .right i.left-border {
   font-size: 17px;
   font-family: var(--montserrat);
 }
+/* second cards box */
 
+.two img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.two .price {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.two .price .now {
+  font-size: 20px;
+  color: #3954d9;
+  font-weight: 700;
+  font-family: "Montserrat";
+  padding: 0 10px;
+}
+.two .price .past {
+  font-size: 18px;
+  text-decoration: line-through;
+  color: #121212;
+  font-weight: 500;
+  font-family: "Montserrat";
+  padding: 0 10px;
+}
 /* end main section */
