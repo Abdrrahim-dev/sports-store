@@ -12,6 +12,9 @@ a {
 ul {
   list-style: none;
 }
+button {
+  cursor: pointer;
+}
 /* variables */
 :root {
   --poppins: "Poppins", sans-serif;
@@ -189,7 +192,202 @@ header .right i.left-border {
   .home p {
     font-size: 15px;
   }
-  .home button {
-  }
 }
 /* end home */
+/* start main section */
+/*  */
+/*  */
+/* first cards box */
+.main-sec {
+  position: relative;
+  top: -40px;
+}
+@media (max-width: 992px) {
+  .main-sec {
+    top: 0;
+  }
+}
+.main-sec .container {
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.22);
+}
+@media (min-width: 768px) {
+  .main-sec .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .main-sec .container {
+    width: 900px;
+  }
+}
+@media (min-width: 1024px) {
+  .main-sec .container {
+    width: 980px;
+  }
+}
+.main-sec .container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.main-sec .container .cards .card {
+  text-align: center;
+  padding: 30px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.main-sec .container .cards .card i {
+  font-size: 35px;
+  color: var(--second-color);
+  margin-bottom: 25px;
+}
+.main-sec .container .cards .card h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-weight: 700;
+  font-family: var(--Bebas);
+}
+.main-sec .container .cards .card p {
+  font-size: 10px;
+  line-height: 24px;
+  color: var(--second-color);
+  font-weight: 300;
+  font-family: var(--montserrat);
+  margin: 10px 0;
+}
+.main-sec .container .cards .card a {
+  font-size: 13px;
+  line-height: 26px;
+  color: var(--third-color);
+  font-weight: 600;
+  font-family: var(--montserrat);
+  text-align: center;
+}
+/* pricing  */
+.main-sec .container > .box {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.main-sec .container > .box .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f0f0;
+}
+.main-sec .container > .box .card img {
+  max-width: 100%;
+}
+@media (max-width: 840px) {
+  .main-sec .container > .box {
+    grid-template-columns: 100%;
+  }
+  .main-sec .container > .box .card {
+    padding: 30px;
+  }
+  .main-sec .container > .box .card img {
+    display: none;
+  }
+}
+.main-sec .container > .box .card > span {
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #616161;
+  font-weight: 600;
+  font-family: var(--poppins);
+  margin: 0 0 15px;
+  text-align: center;
+}
+.main-sec .container > .box .card > h2 {
+  font-size: 43px;
+  text-transform: uppercase;
+  color: #0d2e57;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  margin-bottom: 15px;
+  text-align: center;
+}
+.main-sec .container > .box .card > p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #8a8a8a;
+  font-weight: 300;
+  font-family: var(--montserrat);
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.main-sec .container > .box .card .price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.main-sec .container > .box .card .price .now {
+  font-size: 40px;
+  color: #3954d9;
+  font-weight: 700;
+  font-family: "Montserrat";
+  padding: 0 25px;
+}
+.main-sec .container > .box .card .price .past {
+  font-size: 25px;
+  text-decoration: line-through;
+  color: #121212;
+  font-weight: 500;
+  font-family: "Montserrat";
+  padding: 0 25px;
+}
+.main-sec .container > .box .card .time {
+  display: flex;
+  margin-bottom: 15px;
+}
+.main-sec .container > .box .card .time .box {
+  border-radius: 10px;
+  background-color: #fff;
+  width: 75px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 10px;
+}
+@media (max-width: 300px) {
+  .main-sec .container > .box .card .time .box {
+    width: 65px;
+    margin: 0 5px;
+  }
+  .main-sec .container > .box .card .price .now,
+  .main-sec .container > .box .card .price .past {
+    padding: 0 15px;
+  }
+}
+.main-sec .container > .box .card .time .box h2 {
+  font-size: 30px;
+  font-family: "Montserrat";
+  margin-bottom: 10px;
+  position: relative;
+}
+.main-sec .container > .box .card .time .box h2::after {
+  content: "...";
+  position: absolute;
+  font-size: 12px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-sec .container > .box .card .time .box span {
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+.main-sec .container > .box .card > button {
+  border: none;
+  background-color: var(--third-color);
+  border-radius: 22px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: var(--montserrat);
+}
+
+/* end main section */
