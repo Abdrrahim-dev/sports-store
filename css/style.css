@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+/* variables */
+:root {
+  --poppins: "Poppins", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --Bebas: "Bebas Neue", sans-serif;
+  --main-color: #0d2e57;
+  --second-color: #8a8a8a;
+  --third-color: #3954d9;
+}
+/* start header */
+header {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .left {
+  display: flex;
+  align-items: center;
+}
+header .left i {
+  color: #fff;
+  padding: 15px;
+  font-size: 25px;
+}
+header .left .logo {
+  font-size: 33px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  font-weight: 900;
+  font-family: "Poppins";
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .left nav {
+  display: flex;
+}
+header .left nav a {
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: var(--montserrat);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+header .right {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+header .right i {
+  color: #fff;
+  font-size: 20px;
+  padding: 0 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+header .right i.left-border {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 1024px) {
+  header .right a.removable {
+    display: none;
+  }
+}
+@media (max-width: 830px) {
+  header .left nav a.removable {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  header .left nav {
+    display: none;
+  }
+  header .left .logo {
+    border-right: none;
+  }
+}
+@media (max-width: 335px) {
+  header {
+    flex-direction: column;
+  }
+  header .left {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+  header .left .logo {
+    border: none;
+  }
+  header .right {
+    border: none;
+  }
+  header .right i.left-border {
+    border: none;
+  }
+}
