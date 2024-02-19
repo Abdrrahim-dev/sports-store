@@ -227,7 +227,7 @@ header .right i.left-border {
     width: 980px;
   }
 }
-.main-sec .container .cards {
+.main-sec .container .one {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
@@ -243,7 +243,7 @@ header .right i.left-border {
   margin-bottom: 25px;
 }
 .main-sec .container .cards .card h2 {
-  font-size: 25px;
+  font-size: 22px;
   text-transform: uppercase;
   color: var(--main-color);
   font-weight: 700;
@@ -390,12 +390,14 @@ header .right i.left-border {
   font-family: var(--montserrat);
 }
 /* second cards box */
-
+.two {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
 .two img {
   max-width: 100%;
   margin-bottom: 20px;
 }
-
 .two .price {
   display: flex;
   justify-content: center;
@@ -415,5 +417,86 @@ header .right i.left-border {
   font-weight: 500;
   font-family: "Montserrat";
   padding: 0 10px;
+}
+.two .blue {
+  text-align: start !important;
+  background-color: #232323;
+}
+.two .blue h2 {
+  font-size: 34px !important;
+  letter-spacing: 0px;
+  line-height: 34px;
+  color: #fff !important;
+}
+.two .blue p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 13px;
+  color: #fff;
+  font-weight: 400;
+  font-family: var(--montserrat);
+  padding: 15px 0 25px;
+}
+.two .blue button {
+  border-radius: 22px;
+  border: none;
+  background-color: var(--third-color);
+}
+.two .blue button a {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  font-family: var(--montserrat);
+  font-size: 14px;
+}
+.two .large {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  position: relative;
+  overflow: hidden;
+  text-align: start !important;
+  grid-column: span 2;
+  background-color: #232323;
+}
+@media (max-width: 450px) {
+  .two .large {
+    display: none;
+  }
+}
+.two .large h2 {
+  font-size: 35px !important;
+  letter-spacing: -1px;
+  line-height: 45px;
+  color: #ffffff !important;
+  font-style: italic;
+  font-family: "Poppins" !important;
+  z-index: 10;
+  position: relative;
+  padding-right: 200px;
+}
+@media (max-width: 1023px) {
+  .two .large h2 {
+    font-size: 28px !important;
+  }
+}
+.two .large button {
+  z-index: 100;
+  position: relative;
+  background-color: #65cbff;
+  border: none;
+  border-radius: 21px;
+  margin-top: 15px;
+}
+.two .large button a {
+  color: #000;
+  padding: 10px 14px;
+  font-family: var(--montserrat);
+  display: block;
+}
+.two .large img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 /* end main section */
