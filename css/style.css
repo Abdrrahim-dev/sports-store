@@ -547,3 +547,106 @@ header .right i.left-border {
   padding: 38px 0;
 }
 /* end main section */
+footer {
+  background-image: url("../images/Footer\ BG.png");
+  background-size: cover;
+}
+footer .top {
+  border-bottom: 1px solid #000;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+footer .top .card {
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  footer .top .card {
+    text-align: center;
+  }
+}
+footer .top .card h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--third-color);
+  font-weight: 400;
+  font-family: var(--poppins);
+  padding-bottom: 12px;
+}
+footer .top .card > a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 400;
+  font-family: var(--poppins);
+  padding-bottom: 12px;
+  display: block;
+}
+footer .top .card .social {
+  padding-bottom: 40px;
+}
+footer .top .card .social a {
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+}
+footer .top .card .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 500px) {
+  footer .top .card .newsletter {
+    align-items: center;
+  }
+}
+footer .top .card .newsletter input {
+  border: none;
+  outline: none;
+  background-color: #3f3f3f;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  color: #fff;
+  caret-color: #fff;
+  font-family: var(--poppins);
+  font-size: 12px;
+}
+footer .top .card .newsletter button {
+  border: none;
+  padding: 10px 20px;
+  font-family: var(--poppins);
+  color: #fff;
+  background-color: var(--third-color);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+footer .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 50px;
+}
+footer .bottom .left {
+  opacity: 0.322;
+  font-size: 13px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: var(--poppins);
+}
+@media (max-width: 500px) {
+  footer .bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .bottom .left {
+    text-align: center;
+  }
+}
+footer .bottom .right i {
+  color: #fff;
+  padding: 4px;
+  opacity: 0.5;
+}
